@@ -8,7 +8,7 @@ In this project I have created a **socket programming system** in which:
 **Note:** In order to implement secure communication among clients, I have used **Public key Cryptography**(**RSA algorithm**, to be specific).
 
 # Explanation and program structure
-## 210010001_server.py
+## server.py
 - For encryption, we have used **RSA algorithm** implemented in pycryptodome package.
 
 - Creates a thread for every client connected and handles them seperately.
@@ -39,7 +39,7 @@ This indicates the client that now the video frames would be sent by the server.
 `clients`: dictionary to store client name and public key
 `client_sockets`: list of all client socket objects
 
-## 210010001_client.py
+## client.py
 - Every client has a sending and a receiving thread.
 
 - **Semaphores** have been used in order to synchronize certain parts of the threads.
