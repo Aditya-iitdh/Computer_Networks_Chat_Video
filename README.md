@@ -64,11 +64,11 @@ This indicates the client that now the video frames would be sent by the server.
 Python version: 3 and above.<br>
 In order to install the required packages, execute the following:
 ```bash
-python3 -m venv chat_stream <br>
-source chat_stream/bin/activate <br>
-pip3 install sockets <br>
-pip3 install pycryptodome <br>
-pip3 install opencv-python <br>
+python3 -m venv chat_stream
+source chat_stream/bin/activate
+pip3 install sockets
+pip3 install pycryptodome
+pip3 install opencv-python
 ```
 
 # Demo instructions
