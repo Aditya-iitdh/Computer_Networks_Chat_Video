@@ -1,5 +1,5 @@
 # Introduction
-I have made this project as a part of the course **CS 348: Computer Networks** at **IIT Dharwad**.
+I have made this project as a part of the course **CS 348: Computer Networks** at **IIT Dharwad**.<br>
 In this project I have created a **socket programming system** in which:
 - a server **manages client connections**
 - facilitates **secure communication among clients**
@@ -29,15 +29,15 @@ name of the client which is either newly connected or is disconnecting.
 This indicates the client that now the video frames would be sent by the server.
 
 ### Functions:
-`broadcast_dict(client_name)`: Broadcasts the updated dictionary to all the available clients.
-`broadcast_client_message(message, client_name)`: Pads the ciphertext received from client with `"MSG"` header and client name and broadcasts it to all the clients.
-`extract_frames(video_path)`: Extract all the frames of the video in `video_path`
-`get_video_frames(video)`: Select **one-third** of total number of frames from each resolution and **concatenate** them into one video.
-`new_client(conn_socket, addr)`: Runs on a thread whenever a new client connects.
+`broadcast_dict(client_name)`: Broadcasts the updated dictionary to all the available clients.<br>
+`broadcast_client_message(message, client_name)`: Pads the ciphertext received from client with `"MSG"` header and client name and broadcasts it to all the clients.<br>
+`extract_frames(video_path)`: Extract all the frames of the video in `video_path`<br>
+`get_video_frames(video)`: Select **one-third** of total number of frames from each resolution and **concatenate** them into one video.<br>
+`new_client(conn_socket, addr)`: Runs on a thread whenever a new client connects.<br>
 
 ### Variables:
-`clients`: dictionary to store client name and public key
-`client_sockets`: list of all client socket objects
+`clients`: dictionary to store client name and public key<br>
+`client_sockets`: list of all client socket objects<br>
 
 ## client.py
 - Every client has a sending and a receiving thread.
@@ -51,24 +51,24 @@ This indicates the client that now the video frames would be sent by the server.
 - For each of the messages received from server, we need to extract the actual data from it as it has been prefixed by a header.
 
 ### Functions:
-`client_send()`: This function is run on a thread and is used to send messages to server.
-`client_recv()`: This function is run on another thread and is used to receive messages from the server.	
+`client_send()`: This function is run on a thread and is used to send messages to server.<br>
+`client_recv()`: This function is run on another thread and is used to receive messages from the server.	<br>
 
 ### Variables:
-`mykey`: The generated RSA private key
-`lock_send, lock_recv`: Semaphores to synchronize sender and receiver threads for some initial message transfers.
-`clients`: dictionary to store client name and public key, received from server everytime a client connects or disconnects.
-`choice`: Choice of the client (1. Message a client, 2. Video streaming, 3. QUIT)
+`mykey`: The generated RSA private key.<br>
+`lock_send, lock_recv`: Semaphores to synchronize sender and receiver threads for some initial message transfers.<br>
+`clients`: dictionary to store client name and public key, received from server everytime a client connects or disconnects.<br>
+`choice`: Choice of the client (1. Message a client, 2. Video streaming, 3. QUIT)<br>
 
 # Requirements
-Python version: 3 and above
+Python version: 3 and above.<br>
 In order to install the required packages, execute the following:
 ```bash
-python3 -m venv chat_stream
-source chat_stream/bin/activate
-pip3 install sockets
-pip3 install pycryptodome
-pip3 install opencv-python
+python3 -m venv chat_stream <br>
+source chat_stream/bin/activate <br>
+pip3 install sockets <br>
+pip3 install pycryptodome <br>
+pip3 install opencv-python <br>
 ```
 
 # Demo instructions
