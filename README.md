@@ -64,8 +64,8 @@ This indicates the client that now the video frames would be sent by the server.
 Python version: 3 and above
 In order to install the required packages, execute the following:
 ```bash
-python3 -m venv 210010001
-source 210010001/bin/activate
+python3 -m venv chat_stream
+source chat_stream/bin/activate
 pip3 install sockets
 pip3 install pycryptodome
 pip3 install opencv-python
@@ -74,10 +74,10 @@ pip3 install opencv-python
 # Demo instructions
 - Open two terminal windows. In one run the server and in another run the client(you can run multiple instances of client if you want).
 ```bash
-python3 210010001_server.py # Terminal 1
+python3 server.py # Terminal 1
 ```
 ```bash
-python3 210010001_client.py # Terminal 2
+python3 client.py # Terminal 2
 ```
 
 - Enter the name for each client(public key is sent automatically after that).
