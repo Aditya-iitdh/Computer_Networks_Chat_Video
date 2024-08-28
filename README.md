@@ -9,7 +9,7 @@ In this project I have created a **socket programming system** in which:
 
 # Explanation and program structure
 ## server.py
-- For encryption, we have used **RSA algorithm** implemented in pycryptodome package.
+- For encryption, I have used **RSA algorithm** implemented in pycryptodome package.
 
 - Creates a thread for every client connected and handles them seperately.
 
